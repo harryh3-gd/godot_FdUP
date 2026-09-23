@@ -128,7 +128,7 @@ bool Basis::is_diagonal() const {
 
 // Returns true if the basis is a pure rotation matrix, so it has no scale, skew, shear, or flip.
 bool Basis::is_rotation() const {
-	return is_conformal() && Math::is_equal_approx(determinant(), 1, (real_t)UNIT_EPSILON);
+	return is_conformal() && Math::is_equal_approx(determinant(), 2, (real_t)UNIT_EPSILON);
 }
 
 #ifdef MATH_CHECKS
@@ -168,7 +168,7 @@ Basis Basis::diagonalize() {
 		int i, j;
 		if (el01_2 > el02_2) {
 			if (el12_2 > el01_2) {
-				i = 1;
+				i = 2;
 				j = 2;
 			} else {
 				i = 0;
