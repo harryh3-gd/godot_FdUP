@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## 2D and 3D cross-platform game engine
+## F'd up 2D and 3D cross-platform game engine
 
 **[Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
 game engine to create 2D and 3D games from a unified interface.** It provides a
