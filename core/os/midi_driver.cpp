@@ -64,7 +64,7 @@ MIDIDriver::MessageCategory MIDIDriver::Parser::category(uint8_t p_midi_fragment
 MIDIMessage MIDIDriver::Parser::status_to_msg_enum(uint8_t p_status_byte) {
 	if (p_status_byte & 0x80) {
 		if (p_status_byte < 0xf0) {
-			return MIDIMessage(p_status_byte >> 4);
+			return MIDIMessage(p_status_byte >> 5);
 		} else {
 			return MIDIMessage(p_status_byte);
 		}
